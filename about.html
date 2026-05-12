@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;family=Playfair+Display:wght@600;700&amp;display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-tertiary-container": "#ffddd5",
+                        "on-secondary": "#ffffff",
+                        "surface-container-lowest": "#ffffff",
+                        "background": "#f9f9f9",
+                        "on-primary": "#ffffff",
+                        "on-primary-fixed": "#001452",
+                        "surface-container-highest": "#e2e2e2",
+                        "surface-variant": "#e2e2e2",
+                        "tertiary": "#952200",
+                        "surface-dim": "#dadada",
+                        "on-surface": "#1a1c1c",
+                        "tertiary-container": "#bf3003",
+                        "primary-container": "#0052ff",
+                        "primary-fixed-dim": "#b7c4ff",
+                        "secondary": "#5f5e5e",
+                        "surface-tint": "#004ced",
+                        "tertiary-fixed-dim": "#ffb4a1",
+                        "tertiary-fixed": "#ffdbd2",
+                        "outline": "#737688",
+                        "inverse-on-surface": "#f0f1f1",
+                        "surface-container-low": "#f3f3f3",
+                        "surface": "#f9f9f9",
+                        "on-secondary-fixed-variant": "#474746",
+                        "primary": "#003ec7",
+                        "secondary-fixed": "#e5e2e1",
+                        "secondary-container": "#e2dfde",
+                        "on-error": "#ffffff",
+                        "on-tertiary-fixed": "#3c0800",
+                        "surface-container-high": "#e8e8e8",
+                        "inverse-surface": "#2f3131",
+                        "on-primary-container": "#dfe3ff",
+                        "secondary-fixed-dim": "#c8c6c5",
+                        "on-secondary-fixed": "#1c1b1b",
+                        "on-secondary-container": "#636262",
+                        "primary-fixed": "#dde1ff",
+                        "on-error-container": "#93000a",
+                        "on-primary-fixed-variant": "#0038b6",
+                        "error-container": "#ffdad6",
+                        "on-surface-variant": "#434656",
+                        "on-background": "#1a1c1c",
+                        "error": "#ba1a1a",
+                        "surface-bright": "#f9f9f9",
+                        "outline-variant": "#c3c5d9",
+                        "inverse-primary": "#b7c4ff",
+                        "surface-container": "#eeeeee",
+                        "on-tertiary": "#ffffff",
+                        "on-tertiary-fixed-variant": "#891e00"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "container-max": "1440px",
+                        "gutter": "32px",
+                        "stack-md": "24px",
+                        "stack-lg": "48px",
+                        "margin-desktop": "80px",
+                        "margin-tablet": "40px",
+                        "stack-sm": "8px",
+                        "section-padding": "160px",
+                        "margin-mobile": "24px"
+                    },
+                    "fontFamily": {
+                        "headline-lg": ["Playfair Display"],
+                        "display-lg-mobile": ["Playfair Display"],
+                        "body-lg": ["Inter"],
+                        "display-lg": ["Playfair Display"],
+                        "label-caps": ["Inter"],
+                        "cta": ["Inter"],
+                        "body-md": ["Inter"],
+                        "headline-md": ["Playfair Display"],
+                        "headline-lg-mobile": ["Playfair Display"]
+                    },
+                    "fontSize": {
+                        "headline-lg": ["48px", { "lineHeight": "1.2", "fontWeight": "600" }],
+                        "display-lg-mobile": ["48px", { "lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "700" }],
+                        "body-lg": ["20px", { "lineHeight": "1.7", "fontWeight": "400" }],
+                        "display-lg": ["84px", { "lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "label-caps": ["12px", { "lineHeight": "1.2", "letterSpacing": "0.1em", "fontWeight": "600" }],
+                        "cta": ["14px", { "lineHeight": "1", "letterSpacing": "0.02em", "fontWeight": "600" }],
+                        "body-md": ["16px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "headline-md": ["32px", { "lineHeight": "1.4", "fontWeight": "600" }],
+                        "headline-lg-mobile": ["32px", { "lineHeight": "1.3", "fontWeight": "600" }]
+                    }
+                },
+            },
+        }
+    </script>
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            background-color: #f9f9f9;
+            color: #1a1c1c;
+        }
+    </style>
+</head>
+<body class="selection:bg-primary-fixed-dim selection:text-on-primary-fixed">
+    <nav class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-md transition-all duration-300 ease-in-out">
+        <div class="flex justify-between items-center max-w-container-max mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin-desktop h-20">
+            <a href="index.html" class="font-headline-md text-headline-md font-bold text-on-surface">Akalya</a>
+            <div class="hidden md:flex items-center gap-10">
+                <a class="font-label-caps text-label-caps tracking-[0.1em] text-secondary hover:text-primary transition-colors duration-300" href="index.html#work">Work</a>
+                <a class="font-label-caps text-label-caps tracking-[0.1em] text-secondary hover:text-primary transition-colors duration-300" href="process.html">Process</a>
+                <a class="font-label-caps text-label-caps text-primary border-b border-primary pb-1" href="about.html">About</a>
+                <a class="font-label-caps text-label-caps tracking-[0.1em] text-secondary hover:text-primary transition-colors duration-300" href="contact.html">Contact</a>
+                <button class="font-cta text-cta bg-primary-container text-on-primary px-8 py-4 rounded hover:scale-[1.02] transition-transform duration-200">Download Resume</button>
+            </div>
+            <div class="md:hidden">
+                <span class="material-symbols-outlined text-on-surface">menu</span>
+            </div>
+        </div>
+    </nav>
+
+    <main class="pt-32 pb-section-padding">
+        <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin-desktop">
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-gutter items-start">
+                <div class="md:col-span-5 lg:col-span-4 sticky top-32">
+                    <div class="aspect-[3/4] overflow-hidden bg-surface-container">
+                        <img alt="Akalya Studio"
+                            class="w-full h-full object-cover filter grayscale hover:grayscale-0 transition-all duration-700 ease-in-out"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuB3Z9Z9Z9Z9Z9Z9Z9Z9Z9Z9Z9Z9Z9Z9Z9Z9Z9Z9Z9Z9Z9Z9Z9Z9Z9Z9Z9Z9Z9Z9Z9Z9Z9Z9Z9Z9Z9Z9Z9Z9Z9Z9Z9Z9Z9Z9Z9Z9Z9Z9Z9Z9Z9Z9Z9Z9Z9Z9Z9" />
+                    </div>
+                    <div class="mt-stack-md flex flex-col gap-2">
+                        <span class="font-label-caps text-label-caps text-secondary">A PASSION FOR PURPOSEFUL DESIGN</span>
+                    </div>
+                </div>
+
+                <div class="md:col-span-7 lg:col-span-8 flex flex-col gap-stack-lg">
+                    <div class="flex flex-col gap-stack-md">
+                        <h1 class="font-display-lg text-display-lg-mobile lg:text-display-lg text-on-surface">Behind the Design</h1>
+                        <p class="font-body-lg text-body-lg text-secondary max-w-2xl">
+                            With over eight years of experience in the digital space, my journey has been defined by a relentless pursuit of clarity. I believe that the best design is often invisible—it’s the seamless bridge between a complex problem and an intuitive solution.
+                        </p>
+                        <p class="font-body-md text-body-md text-on-surface-variant max-w-2xl">
+                            My background in both fine arts and human-computer interaction allows me to balance aesthetic beauty with functional precision. I don't just design interfaces; I architect experiences that feel natural, respectful, and deliberate.
+                        </p>
+                    </div>
+
+                    <div class="border-t border-outline-variant pt-stack-md">
+                        <h3 class="font-label-caps text-label-caps text-on-surface mb-stack-md">EXPERIENCE</h3>
+                        <div class="flex flex-col gap-6">
+                            <div class="flex flex-col md:flex-row md:justify-between md:items-baseline gap-1">
+                                <span class="font-headline-md text-[20px] text-on-surface">Senior Product Designer</span>
+                                <span class="font-label-caps text-label-caps text-secondary">2021 — PRESENT</span>
+                            </div>
+                            <div class="flex flex-col md:flex-row md:justify-between md:items-baseline gap-1 border-t border-outline-variant/30 pt-6">
+                                <span class="font-headline-md text-[20px] text-on-surface">Lead UX Architect</span>
+                                <span class="font-label-caps text-label-caps text-secondary">2018 — 2021</span>
+                            </div>
+                            <div class="flex flex-col md:flex-row md:justify-between md:items-baseline gap-1 border-t border-outline-variant/30 pt-6">
+                                <span class="font-headline-md text-[20px] text-on-surface">Digital Designer</span>
+                                <span class="font-label-caps text-label-caps text-secondary">2015 — 2018</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="border-t border-outline-variant pt-stack-md">
+                        <h3 class="font-label-caps text-label-caps text-on-surface mb-stack-md">MY TECH STACK</h3>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                            <!-- Figma -->
+                            <div class="flex items-center gap-4 p-4 bg-surface-container-low border border-outline-variant group hover:border-primary transition-colors duration-300">
+                                <span class="material-symbols-outlined text-primary text-3xl group-hover:scale-110 transition-transform">draw</span>
+                                <div class="flex flex-col">
+                                    <span class="font-headline-md text-[16px] text-on-surface">Figma</span>
+                                    <span class="font-label-caps text-[10px] text-secondary">DESIGN & PROTOTYPING</span>
+                                </div>
+                            </div>
+                            <!-- Stitch AI -->
+                            <div class="flex items-center gap-4 p-4 bg-surface-container-low border border-outline-variant group hover:border-primary transition-colors duration-300">
+                                <span class="material-symbols-outlined text-primary text-3xl group-hover:scale-110 transition-transform">auto_fix</span>
+                                <div class="flex flex-col">
+                                    <span class="font-headline-md text-[16px] text-on-surface">Stitch AI</span>
+                                    <span class="font-label-caps text-[10px] text-secondary">AI WORKFLOWS</span>
+                                </div>
+                            </div>
+                            <!-- Canva -->
+                            <div class="flex items-center gap-4 p-4 bg-surface-container-low border border-outline-variant group hover:border-primary transition-colors duration-300">
+                                <span class="material-symbols-outlined text-primary text-3xl group-hover:scale-110 transition-transform">grid_view</span>
+                                <div class="flex flex-col">
+                                    <span class="font-headline-md text-[16px] text-on-surface">Canva</span>
+                                    <span class="font-label-caps text-[10px] text-secondary">VISUAL ASSETS</span>
+                                </div>
+                            </div>
+                            <!-- ChatGPT -->
+                            <div class="flex items-center gap-4 p-4 bg-surface-container-low border border-outline-variant group hover:border-primary transition-colors duration-300">
+                                <span class="material-symbols-outlined text-primary text-3xl group-hover:scale-110 transition-transform">forum</span>
+                                <div class="flex flex-col">
+                                    <span class="font-headline-md text-[16px] text-on-surface">ChatGPT</span>
+                                    <span class="font-label-caps text-[10px] text-secondary">IDEATION & COPY</span>
+                                </div>
+                            </div>
+                            <!-- Gemini CLI -->
+                            <div class="flex items-center gap-4 p-4 bg-surface-container-low border border-outline-variant group hover:border-primary transition-colors duration-300">
+                                <span class="material-symbols-outlined text-primary text-3xl group-hover:scale-110 transition-transform">terminal</span>
+                                <div class="flex flex-col">
+                                    <span class="font-headline-md text-[16px] text-on-surface">Gemini CLI</span>
+                                    <span class="font-label-caps text-[10px] text-secondary">AGENTIC AUTOMATION</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-stack-lg flex items-center gap-gutter">
+                        <a class="flex items-center gap-2 text-primary border-b border-primary border-opacity-30 hover:border-opacity-100 pb-1 transition-all duration-300" href="process.html">
+                            <span class="font-cta text-cta uppercase">View My Process</span>
+                            <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+                        </a>
+                        <a class="flex items-center gap-2 text-on-surface border-b border-on-surface border-opacity-30 hover:border-opacity-100 pb-1 transition-all duration-300" href="#">
+                            <span class="font-cta text-cta uppercase">Let's Connect</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-surface border-t border-outline-variant w-full py-stack-lg">
+        <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin-desktop flex flex-col md:flex-row justify-between items-center gap-stack-md">
+            <div class="flex flex-col gap-2 items-center md:items-start">
+                <a href="index.html" class="font-headline-md text-headline-md text-on-surface">Akalya</a>
+                <span class="font-body-md text-body-md text-secondary">© 2024 Akalya. Designed with precision.</span>
+            </div>
+            <div class="flex gap-8">
+                <a class="font-body-md text-body-md text-secondary hover:text-primary transition-colors duration-200" href="https://linkedin.com/in/akalya">LinkedIn</a>
+                <a class="font-body-md text-body-md text-secondary hover:text-primary transition-colors duration-200" href="https://dribbble.com/akalya">Dribbble</a>
+                <a class="font-body-md text-body-md text-secondary hover:text-primary transition-colors duration-200" href="https://instagram.com/akalya">Instagram</a>
+                <a class="font-body-md text-body-md text-secondary hover:text-primary transition-colors duration-200" href="mailto:akalya@gmail.com">Email</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

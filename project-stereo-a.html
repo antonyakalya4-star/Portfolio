@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;family=Playfair+Display:wght@600;700&amp;display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-tertiary-container": "#ffddd5",
+                        "on-secondary": "#ffffff",
+                        "surface-container-lowest": "#ffffff",
+                        "background": "#f9f9f9",
+                        "on-primary": "#ffffff",
+                        "on-primary-fixed": "#001452",
+                        "surface-container-highest": "#e2e2e2",
+                        "surface-variant": "#e2e2e2",
+                        "tertiary": "#952200",
+                        "surface-dim": "#dadada",
+                        "on-surface": "#1a1c1c",
+                        "tertiary-container": "#bf3003",
+                        "primary-container": "#0052ff",
+                        "primary-fixed-dim": "#b7c4ff",
+                        "secondary": "#5f5e5e",
+                        "surface-tint": "#004ced",
+                        "tertiary-fixed-dim": "#ffb4a1",
+                        "tertiary-fixed": "#ffdbd2",
+                        "outline": "#737688",
+                        "inverse-on-surface": "#f0f1f1",
+                        "surface-container-low": "#f3f3f3",
+                        "surface": "#f9f9f9",
+                        "on-secondary-fixed-variant": "#474746",
+                        "primary": "#003ec7",
+                        "secondary-fixed": "#e5e2e1",
+                        "secondary-container": "#e2dfde",
+                        "on-error": "#ffffff",
+                        "on-tertiary-fixed": "#3c0800",
+                        "surface-container-high": "#e8e8e8",
+                        "inverse-surface": "#2f3131",
+                        "on-primary-container": "#dfe3ff",
+                        "secondary-fixed-dim": "#c8c6c5",
+                        "on-secondary-fixed": "#1c1b1b",
+                        "on-secondary-container": "#636262",
+                        "primary-fixed": "#dde1ff",
+                        "on-error-container": "#93000a",
+                        "on-primary-fixed-variant": "#0038b6",
+                        "error-container": "#ffdad6",
+                        "on-surface-variant": "#434656",
+                        "on-background": "#1a1c1c",
+                        "error": "#ba1a1a",
+                        "surface-bright": "#f9f9f9",
+                        "outline-variant": "#c3c5d9",
+                        "inverse-primary": "#b7c4ff",
+                        "surface-container": "#eeeeee",
+                        "on-tertiary": "#ffffff",
+                        "on-tertiary-fixed-variant": "#891e00"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "container-max": "1440px",
+                        "gutter": "32px",
+                        "stack-md": "24px",
+                        "stack-lg": "48px",
+                        "margin-desktop": "80px",
+                        "margin-tablet": "40px",
+                        "stack-sm": "8px",
+                        "section-padding": "160px",
+                        "margin-mobile": "24px"
+                    },
+                    "fontFamily": {
+                        "headline-lg": ["Playfair Display"],
+                        "display-lg-mobile": ["Playfair Display"],
+                        "body-lg": ["Inter"],
+                        "display-lg": ["Playfair Display"],
+                        "label-caps": ["Inter"],
+                        "cta": ["Inter"],
+                        "body-md": ["Inter"],
+                        "headline-md": ["Playfair Display"],
+                        "headline-lg-mobile": ["Playfair Display"]
+                    },
+                    "fontSize": {
+                        "headline-lg": ["48px", { "lineHeight": "1.2", "fontWeight": "600" }],
+                        "display-lg-mobile": ["48px", { "lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "700" }],
+                        "body-lg": ["20px", { "lineHeight": "1.7", "fontWeight": "400" }],
+                        "display-lg": ["84px", { "lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "label-caps": ["12px", { "lineHeight": "1.2", "letterSpacing": "0.1em", "fontWeight": "600" }],
+                        "cta": ["14px", { "lineHeight": "1", "letterSpacing": "0.02em", "fontWeight": "600" }],
+                        "body-md": ["16px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "headline-md": ["32px", { "lineHeight": "1.4", "fontWeight": "600" }],
+                        "headline-lg-mobile": ["32px", { "lineHeight": "1.3", "fontWeight": "600" }]
+                    }
+                },
+            },
+        }
+    </script>
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            background-color: #f9f9f9;
+            color: #1a1c1c;
+        }
+    </style>
+</head>
+<body class="selection:bg-primary-fixed-dim selection:text-on-primary-fixed">
+    <nav class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-md transition-all duration-300 ease-in-out">
+        <div class="flex justify-between items-center max-w-container-max mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin-desktop h-20">
+            <a href="index.html" class="font-headline-md text-headline-md font-bold text-on-surface">Akalya</a>
+            <div class="hidden md:flex items-center gap-10">
+                <a class="font-label-caps text-label-caps tracking-[0.1em] text-secondary hover:text-primary transition-colors duration-300" href="index.html#work">Work</a>
+                <a class="font-label-caps text-label-caps tracking-[0.1em] text-secondary hover:text-primary transition-colors duration-300" href="process.html">Process</a>
+                <a class="font-label-caps text-label-caps tracking-[0.1em] text-secondary hover:text-primary transition-colors duration-300" href="about.html">About</a>
+                <a class="font-label-caps text-label-caps tracking-[0.1em] text-secondary hover:text-primary transition-colors duration-300" href="contact.html">Contact</a>
+                <button class="font-cta text-cta bg-primary-container text-on-primary px-8 py-4 rounded hover:scale-[1.02] transition-transform duration-200">Download Resume</button>
+            </div>
+            <div class="md:hidden">
+                <span class="material-symbols-outlined text-on-surface">menu</span>
+            </div>
+        </div>
+    </nav>
+
+    <main class="pt-32">
+        <!-- Hero Section -->
+        <section class="max-w-container-max mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin-desktop mb-stack-lg">
+            <div class="flex flex-col gap-6 mb-stack-lg">
+                <div class="flex flex-col gap-2">
+                    <span class="font-label-caps text-label-caps text-primary tracking-widest uppercase">UI Design & Logo</span>
+                    <h1 class="font-display-lg text-display-lg-mobile lg:text-display-lg text-on-surface">Stereo A: Video Player</h1>
+                </div>
+                <div class="aspect-video w-full overflow-hidden bg-surface-container">
+                    <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuAn-An-An-An-An-An-An-An-An-An-An-An-An-An-An-An-An-An-An-An-An-An-An-An-An-An-An-An-An-An-An-An-An-An-An-An-An-An-An-An-An" 
+                         alt="Stereo A Hero" 
+                         class="w-full h-full object-cover">
+                </div>
+            </div>
+
+            <!-- Project Context -->
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-gutter py-stack-lg border-t border-outline-variant">
+                <div class="md:col-span-4 flex flex-col gap-stack-md">
+                    <div>
+                        <h4 class="font-label-caps text-[10px] tracking-widest text-secondary uppercase mb-2">Role</h4>
+                        <p class="font-body-md text-on-surface">Lead UI Designer</p>
+                    </div>
+                    <div>
+                        <h4 class="font-label-caps text-[10px] tracking-widest text-secondary uppercase mb-2">Timeline</h4>
+                        <p class="font-body-md text-on-surface">3 Months (2023)</p>
+                    </div>
+                    <div>
+                        <h4 class="font-label-caps text-[10px] tracking-widest text-secondary uppercase mb-2">Tools</h4>
+                        <p class="font-body-md text-on-surface">Figma, Principle, After Effects</p>
+                    </div>
+                </div>
+                <div class="md:col-span-8">
+                    <h3 class="font-headline-md text-headline-md text-on-surface mb-6">The Challenge</h3>
+                    <p class="font-body-lg text-body-lg text-secondary mb-8">
+                        Most modern video players are cluttered with controls that distract from the cinematic experience. The challenge was to create a gesture-driven interface that remains completely invisible during playback, while providing powerful tools for professional editors and casual viewers alike.
+                    </p>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 mt-stack-lg">
+                        <div class="flex flex-col gap-4">
+                            <span class="material-symbols-outlined text-primary text-3xl">visibility_off</span>
+                            <h5 class="font-headline-md text-[18px] text-on-surface">Zero Friction</h5>
+                            <p class="font-body-md text-secondary">Reducing UI presence during active viewing to prioritize content immersion.</p>
+                        </div>
+                        <div class="flex flex-col gap-4">
+                            <span class="material-symbols-outlined text-primary text-3xl">touch_app</span>
+                            <h5 class="font-headline-md text-[18px] text-on-surface">Gesture Logic</h5>
+                            <p class="font-body-md text-secondary">Mapping complex controls (scrubbing, brightness, volume) to intuitive touch gestures.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- The Solution -->
+            <div class="py-section-padding border-t border-outline-variant">
+                <div class="grid grid-cols-1 md:grid-cols-12 gap-gutter items-center">
+                    <div class="md:col-span-5 flex flex-col gap-stack-md">
+                        <span class="font-label-caps text-label-caps text-primary tracking-widest uppercase">The Solution</span>
+                        <h3 class="font-display-lg text-headline-lg text-on-surface leading-tight">A Narrative-First Interface</h3>
+                        <p class="font-body-md text-secondary">
+                            Stereo A utilizes a progressive disclosure model. Controls are contextually aware, appearing only when the user's focus shifts. We developed a proprietary "Fluid Scrub" system that allows for frame-perfect precision without a physical seek bar.
+                        </p>
+                        <ul class="flex flex-col gap-4 mt-4">
+                            <li class="flex items-center gap-3">
+                                <span class="material-symbols-outlined text-primary text-sm">check</span>
+                                <span class="font-body-md text-on-surface">Dynamic contrast adjustment based on video color palette</span>
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <span class="material-symbols-outlined text-primary text-sm">check</span>
+                                <span class="font-body-md text-on-surface">Minimalist logo and branding integration</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="md:col-span-7 aspect-video bg-surface-container overflow-hidden">
+                        <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuAn-An-An-An-An-An-An-An-An-An-An-An-An-An-An-An-An-An-An-An-An-An-An-An-An-An-An-An-An-An-An-An-An-An-An-An-An-An-An-An-An" 
+                             alt="Stereo A Interface Detail" 
+                             class="w-full h-full object-cover">
+                    </div>
+                </div>
+            </div>
+
+            <!-- The Results -->
+            <div class="py-section-padding border-t border-outline-variant text-center flex flex-col items-center gap-stack-md">
+                <span class="font-label-caps text-label-caps text-primary tracking-widest uppercase">Results & Impact</span>
+                <h3 class="font-headline-lg text-headline-lg text-on-surface max-w-3xl mx-auto">40% Increase in session duration through focused viewing.</h3>
+                <p class="font-body-lg text-body-lg text-secondary max-w-2xl mx-auto">
+                    By removing the "clutter" of traditional players, users reported a much higher level of satisfaction and emotional connection to the media they were consuming.
+                </p>
+            </div>
+
+            <!-- Navigation -->
+            <div class="flex justify-between items-center py-stack-lg border-t border-outline-variant mt-stack-lg">
+                <a href="index.html#work" class="flex items-center gap-2 text-secondary hover:text-primary transition-colors">
+                    <span class="material-symbols-outlined text-[18px]">arrow_back</span>
+                    <span class="font-cta text-cta uppercase">Back to Work</span>
+                </a>
+                <a href="project-event-nav.html" class="flex items-center gap-2 text-on-surface hover:text-primary transition-colors group">
+                    <span class="font-cta text-cta uppercase">Next Project</span>
+                    <span class="material-symbols-outlined text-[18px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-surface border-t border-outline-variant w-full py-stack-lg">
+        <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin-desktop flex flex-col md:flex-row justify-between items-center gap-stack-md">
+            <div class="flex flex-col gap-2 items-center md:items-start">
+                <a href="index.html" class="font-headline-md text-headline-md text-on-surface">Akalya</a>
+                <span class="font-body-md text-body-md text-secondary">© 2024 Akalya. Designed with precision.</span>
+            </div>
+            <div class="flex gap-8">
+                <a class="font-body-md text-body-md text-secondary hover:text-primary transition-colors duration-200" href="https://linkedin.com/in/akalya">LinkedIn</a>
+                <a class="font-body-md text-body-md text-secondary hover:text-primary transition-colors duration-200" href="https://dribbble.com/akalya">Dribbble</a>
+                <a class="font-body-md text-body-md text-secondary hover:text-primary transition-colors duration-200" href="https://instagram.com/akalya">Instagram</a>
+                <a class="font-body-md text-body-md text-secondary hover:text-primary transition-colors duration-200" href="mailto:akalya@gmail.com">Email</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
